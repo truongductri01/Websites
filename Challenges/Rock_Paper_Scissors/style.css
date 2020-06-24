@@ -1,0 +1,23 @@
+body{
+  color: red;
+}
+.container-3{
+  border: 2px solid black;
+  text-align: center;
+  text-decoration-color: red;
+  color: blue;
+  /* width: 75%; */
+  margin: auto;
+}
+.flex-box-rps{
+  display: flex;
+  border: 2px solid red;
+  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+}
+.flex-box-rps img:hover{  /*This will shadowing the image when the cursor passing each of them*/
+  box-shadow: 0px 5px 25px rgba(0, 0, 255, 0.5);
+}
