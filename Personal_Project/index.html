@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math simple</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Math Calculation</h1>
+    <p>Choose your operator below:</p>
+    <div class="operator-container">
+      <button id='addBtn' class="btn btn-danger" onclick="addition()">+</button>
+      <button id='substractBtn' class="btn btn-warning" onclick="substraction()">-</button>
+      <button id='multiplyBtn' class="btn btn-success" onclick="multiplication()">x</button>
+      <button id='divideBtn' class='btn btn-primary' onclick="division()">/</button>
+    </div>
+      <div class="container">
+        <div class="flex-box-question">
+          <span id="num-0"></span>
+          <span id="operator">+</span>
+          <span id='num-1'></span>
+          <span>= ???</span>
+        </div>
+
+        <br>
+
+        <form id="answer-form">
+          <label>Type in your answer:</label>
+        <input type="text" id='answer-input' placeholder="Answer" size="4" maxlength="4">
+        </form>
+
+        <br>
+        <button class="btn btn-secondary" onclick="btn()">Submit</button>
+
+        <p id="display" font-size = "20p"></p>
+        <button class="btn btn-info" onclick="reset()">Generate new Question</button>
+      </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
