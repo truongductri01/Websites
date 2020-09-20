@@ -1,0 +1,33 @@
+.row {
+  margin-left: 20px;
+  color: white;
+}
+.row_posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+.row_posters::-webkit-scrollbar {
+  /* Read more about :: and : */
+  display: none;
+}
+
+.row_poster {
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+
+  transition: transform 450ms;
+  /* Using this to delay the transform and make the animation smoother for the hover part*/
+}
+.row_posterLarge {
+  max-height: 250px;
+}
+.row_posterLarge:hover {
+  transform: scale(1.1);
+}
+
+.row_poster:hover {
+  transform: scale(1.08);
+}

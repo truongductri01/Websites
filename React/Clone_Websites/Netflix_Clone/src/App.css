@@ -1,0 +1,12 @@
+* {
+  margin: 0; /* The app originally give some margin, we wipe that away*/
+}
+
+/* background */
+.app {
+  background-color: #111;
+}
+
+.app::-webkit-scrollbar {
+  display: none;
+}
